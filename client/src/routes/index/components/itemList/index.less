@@ -1,5 +1,38 @@
 .container {
-  width: 200px;
+  display: flex;
+  flex-direction: column;
+  width: 240px;
   background-color: @theme_color_white;
   margin-right: @layout_spacing_horizontal;
+
+  .listLab {
+    flex: 1;
+    padding: @layout_spacing_vertical 0;
+    overflow-y: auto;
+  }
+  .itemCon {
+    display: flex;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 @layout_spacing_horizontal;
+    border-bottom: 1px solid @theme_border_color;
+    cursor: pointer;
+
+    &:last-child {
+      border-bottom: none;
+    }
+    &:hover {
+      background-color: @theme_color_05;
+    }
+    
+    .itemName {
+      width: 80px;
+    }
+    .itemDesc {
+      flex: 1;
+    }
+  }
+  .btnLab {
+    padding: 0 @layout_spacing_horizontal @layout_spacing_vertical;
+  }
 }

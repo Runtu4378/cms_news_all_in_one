@@ -5,15 +5,19 @@ import ItemList from './components/itemList'
 const PageIndex = ({
   dispatch,
   loading,
-  index,
+  app,
 }) => {
   // 属性定义
+  const propsOfItemList = {
+    dispatch,
+    app,
+  }
 
   return (
     <div className={les.contaienr}>
-      <ItemList />
+      <ItemList {...propsOfItemList} />
     </div>
   );
 }
 
-export default connect(({ loading, index }) => ({ loading, index }))(PageIndex)
+export default connect(({ loading, app }) => ({ loading, app }))(PageIndex)
