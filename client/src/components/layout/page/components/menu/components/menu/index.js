@@ -3,10 +3,7 @@ import les from './index.less'
 const Menu = () => {
   // 属性提取
   const menuList = [
-    { path: '/', label: '主页' },
-    { path: '/year', label: '年视图' },
-    { path: '/month', label: '月视图' },
-    { path: '/date', label: '日视图' },
+    { path: '/', label: '条目列表' },
   ]
 
   // 渲染方法定义
