@@ -41,7 +41,7 @@ const ItemList = ({
       <div className={les.btnLab}>
         <Button
           block={true}
-        >新增条目</Button>
+        >新增内容</Button>
       </div>
     </div>
   )

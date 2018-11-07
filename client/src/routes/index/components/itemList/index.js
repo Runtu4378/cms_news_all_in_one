@@ -32,7 +32,7 @@ const ItemList = ({
         {
           itemList && itemList.length ?
           mapList(itemList) :
-          (<div>暂无内容</div>)
+          (<div>暂无条目</div>)
         }
       </div>
       <div className={les.btnLab}>
