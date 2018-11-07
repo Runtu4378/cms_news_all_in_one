@@ -33,18 +33,10 @@ export class DefaultConfig {
     all,
   };
 
-  readonly sequelize = {
-    dialect: 'mysql',
-    username: 'root',
-    password: 'root',
-    host: '127.0.0.1',
-    port: 3306,
-    database: 'journal_db',
-    define: {
-      timestamps: true,
-      paranoid: true,
-      underscored: true,
-      freezeTableName: true,
+  readonly mongoose = {
+    client: {
+      url: 'mongodb://127.0.0.1/cms_news_db',
+      options: {},
     },
   };
 
@@ -64,7 +56,7 @@ export class DefaultConfig {
   };
 
   // 配置需要的中间件，数组顺序即为中间件的加载顺序
-  readonly middleware = [ 'authentication', 'dealRes' ];
+  readonly middleware = [ 'dealRes' ];
 
   readonly authentication = {
     ignore : /^\/api\/(login|signup|user)/,

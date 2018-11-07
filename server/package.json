@@ -23,9 +23,9 @@
   "dependencies": {
     "egg": "^2.10.0",
     "egg-cors": "^2.1.1",
+    "egg-mongoose": "^3.1.1",
     "egg-scripts": "^2.10.0",
     "moment": "^2.22.2",
-    "mongoose": "^5.3.10",
     "tslib": "^1.9.3",
     "typescript": "^3.1.3"
   },
