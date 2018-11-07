@@ -1,0 +1,10 @@
+node_modules
+logs
+run
+
+# typescript about
+app/**/*.js
+app/*.js
+config/*.js
+database/definition/**/*.js
+*.js
