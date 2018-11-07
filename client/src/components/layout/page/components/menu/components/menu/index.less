@@ -1,0 +1,28 @@
+@item_hei: 32px;
+
+.container {
+  padding: 30px 0px;
+
+  .menu {
+    .menuItem {
+      height: @item_hei;
+      line-height: @item_hei;
+      position: relative;
+      left: -14px;
+      margin-left: -@layout_spacing_horizontal;
+      margin-right: -@layout_spacing_horizontal;
+      margin-bottom: @layout_spacing_vertical;
+      padding: 0 @layout_spacing_horizontal + 10;
+      cursor: pointer;
+      background-color: @theme_color_gray;
+      transform: skewX(-10deg);
+      transition: all ease .3s;
+
+      &:hover {
+        left: -10px;
+        background-color: @theme_color_black;
+        color: #fff;
+      }
+    }
+  }
+}

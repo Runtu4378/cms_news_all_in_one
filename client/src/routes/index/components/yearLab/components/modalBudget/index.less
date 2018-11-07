@@ -1,0 +1,36 @@
+.table {
+  width: 100%;
+
+  tr {
+    height: 3em;
+    line-height: 3em;
+    border-bottom: 1px solid @theme_color_gray;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  td {
+    padding: 0 .5em;
+    border-right: 1px solid @theme_color_gray;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  .titleTd {
+    width: 66px;
+    font-size: 1em;
+    text-align: right;
+  }
+  .incomeTd {
+    text-align: center;
+  }
+  .outlayTd {
+    text-align: center;
+  }
+  .netTd {
+    text-align: center;
+  }
+}

@@ -1,0 +1,21 @@
+@hei: 42px;
+
+.mark {
+  height: @hei;
+  margin:
+    -@layout_spacing_vertical
+    -@layout_spacing_horizontal
+    @layout_spacing_vertical;
+  padding: 0 @layout_spacing_horizontal;
+  box-sizing: border-box;
+  background-color: @theme_color_black;
+  color: #fff;
+  font-size: 16px;
+
+  .icon {
+    margin-right: 10px;
+  }
+  .txt {
+    line-height: @hei;
+  }
+}

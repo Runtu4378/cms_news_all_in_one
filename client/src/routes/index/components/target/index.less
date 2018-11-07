@@ -1,0 +1,15 @@
+.container {
+  flex: 1;
+  position: relative;
+  background-color: @theme_color_white;
+
+  .floatCon {
+    position: absolute;
+    top: @layout_spacing_vertical; right: @layout_spacing_horizontal;
+    bottom: @layout_spacing_vertical; left: @layout_spacing_horizontal;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

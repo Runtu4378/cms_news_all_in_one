@@ -1,0 +1,45 @@
+// 初始化样式start
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+ul,
+li {
+  list-style: none;
+}
+// 初始化样式end
+
+:global(#root) {
+  width: 100%;
+  height: 100%;
+}
+
+.body {
+  display: flex;
+  width: 100%;
+  height: 100%; 
+  background-color: @theme_background_color;
+
+  .container {
+    flex: 1;
+    padding-left: @layout_spacing_horizontal;
+    overflow-y: auto;
+
+    .content {
+      position: relative;
+      min-height: calc(100% - 32px - @padding_sm);
+    }
+    .footer {
+      margin-top: @padding_sm;
+      height: 32px;
+      line-height: 32px;
+      background-color: @theme_color_white;
+      text-align: center;
+    }
+  }
+}
