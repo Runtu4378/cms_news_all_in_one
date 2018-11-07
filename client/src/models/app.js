@@ -17,6 +17,7 @@ export default moduleExtend(model, {
         desc: '媒体新闻',
       },
     ],
+    itemSelect: {},
   },
 
   subscriptions: {

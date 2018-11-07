@@ -8,8 +8,11 @@ const ItemList = ({
 }) => {
   // props collect
   const {
-    itemList,
+    itemSelect,
   } = app
+  const {
+    dataList,
+  } = itemSelect
 
   // func definition
   const mapList = (arr) => {
@@ -26,12 +29,12 @@ const ItemList = ({
   return (
     <div className={les.container}>
       <div className={les.title}>
-        条目列表
+        内容列表
       </div>
       <div className={les.listLab}>
         {
-          itemList && itemList.length ?
-          mapList(itemList) :
+          dataList && dataList.length ?
+          mapList(dataList) :
           (<div>暂无内容</div>)
         }
       </div>
