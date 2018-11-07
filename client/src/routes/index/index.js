@@ -1,5 +1,6 @@
 import { connect } from 'dva'
 import les from './index.less'
+import ItemList from './components/itemList'
 
 const PageIndex = ({
   dispatch,
@@ -10,6 +11,7 @@ const PageIndex = ({
 
   return (
     <div className={les.contaienr}>
+      <ItemList />
     </div>
   );
 }
